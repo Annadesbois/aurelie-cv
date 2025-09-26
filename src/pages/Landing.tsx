@@ -1,4 +1,6 @@
 import aurelie from "@/assets/aurelie.jpg";
+import { programmingSkillsPreview, softSkills } from "@/data";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -33,6 +35,40 @@ const Landing = () => {
                 collaborative mindset to every project.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="hero bg-base-200 py-8 w-full">
+        <div className="hero-content text-center">
+          <div>
+            <h1 className="text-center text-4xl font-bold text-primary mb-6">
+              Programming Skills
+            </h1>
+            <ul className="pb-6">
+              {programmingSkillsPreview.map((skill) => {
+                return <li className="pb-4">{skill}</li>;
+              })}
+            </ul>
+            <Link to="/skillsandexperience" className="btn btn-primary">
+              Go to Skills & Experience
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="hero bg-base-100 py-8">
+        <div className="hero-content text-center">
+          <div className="">
+            <h1 className="text-center text-4xl font-bold text-primary mb-6">
+              Soft Skills
+            </h1>
+            <ul className="pb-6">
+              {softSkills.map((skill) => {
+                return <li className="pb-4">{skill}</li>;
+              })}
+            </ul>
+            <Link to="/careerbackground" className="btn btn-primary">
+              Go to Career Background
+            </Link>
           </div>
         </div>
       </div>

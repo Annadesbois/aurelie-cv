@@ -40,11 +40,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <label className="swap swap-rotate">
-            <input type="checkbox" onChange={toggleTheme} />
-            <BsSunFill className="swap-on w-4 h-4 text-primary" />
-            <BsMoonFill className="swap-off w-4 h-4 text-primary" />
-          </label>
+          <button className="btn btn-ghost">
+            <label className="swap swap-rotate">
+              <input type="checkbox" onChange={toggleTheme} />
+              <BsSunFill className="swap-on w-4 h-4 text-primary" />
+              <BsMoonFill className="swap-off w-4 h-4 text-primary" />
+            </label>
+          </button>
         </div>
       </div>
     </nav>

@@ -42,25 +42,30 @@ A modern, responsive CV/portfolio website built with React, TypeScript, and Vite
 ```
 src/
 ├── components/
-│   ├── Footer.tsx           # Site footer with contact info
-│   ├── Loading.tsx          # Loading spinner component
-│   ├── Navbar.tsx           # Navigation with theme toggle
-│   ├── NavLinks.tsx         # Navigation link components
-│   ├── ScrollToTop.tsx      # Scroll management utility
-│   └── SectionRenderer.tsx  # Reusable section display component
+│   ├── Footer.tsx              # Site footer
+│   ├── Loading.tsx             # Loading spinner component
+│   ├── Navbar.tsx              # Navigation with theme toggle
+│   ├── NavLinks.tsx            # Navigation link components
+│   └── SectionRenderer.tsx     # Reusable section display component
 ├── pages/
-│   ├── CareerBackground.tsx # Career history with collapsible sections
-│   ├── Error.tsx            # 404 and error handling
-│   ├── HomeLayout.tsx       # Main layout wrapper
-│   ├── Landing.tsx          # Homepage with introduction
+│   ├── CareerBackground.tsx    # Career history with collapsible sections
+│   ├── Error.tsx               # 404 and error handling
+│   ├── HomeLayout.tsx          # Main layout wrapper
+│   ├── Landing.tsx             # Homepage with introduction
 │   └── SkillsAndExperience.tsx # Technical skills and experience
 ├── assets/
-│   └── aurelie.jpg          # Profile image
-├── data.ts                  # Centralised data configuration
-├── types.ts                 # TypeScript type definitions
-├── index.css                # Global styles and Tailwind imports
-├── App.tsx                  # Router configuration
-└── main.tsx                 # Application entry point
+│   └── aurelie.jpg             # Profile image
+├── data/
+│   ├── landingData.ts          # Data for the landing page
+│   ├── skillsAndExperienceData.ts # Data for the skills & experience page
+│   └── careerBackgroundData.ts # Data for the career background page
+├── routes/
+│   └── router.tsx              # Centralised React Router configuration
+├── types.ts                    # TypeScript type definitions
+├── index.css                   # Tailwind imports
+├── App.tsx                     # App root that mounts RouterProvider
+└── main.tsx                    # Application entry point
+
 ```
 
 ## 🔧 Installation & Setup
@@ -105,9 +110,12 @@ src/
 
 ### Data Management
 
-- Centralised data structure in `data.ts`
-- TypeScript interfaces for type safety
-- Modular content organisation for easy updates
+- Page-specific data stored in `src/data/`
+  - `landingData.ts` for landing page content
+  - `skillsAndExperienceData.ts` for skills & experience content
+  - `careerBackgroundData.ts` for career background content
+- TypeScript interfaces in `types.ts` ensure type safety
+- Modular content organisation makes it easy to extend or update individual pages
 
 ### Responsive Design
 
@@ -118,8 +126,8 @@ src/
 ### Component Architecture
 
 - **SectionRenderer**: Flexible component for displaying categorised lists
-- **Collapsible Sections**: Interactive career background display
-- **Reusable UI Elements**: Consistent design patterns throughout
+- **Collapsible Sections**: Interactive component for presenting career background details
+- **Reusable UI Elements**: Shared components that enforce consistent design patterns across the app
 
 ## 📱 Pages Overview
 
@@ -139,13 +147,16 @@ src/
 
 - Detailed career history in collapsible format
 - Project management and leadership experience
-- Links to professional profiles
+- Link to professional profile
 
 ## 🎨 Customisation
 
 ### Updating Content
 
-1. Modify data in `src/data.ts`
+1. Modify the relevant file in `src/data/`
+   - `landingData.ts` for landing page content
+   - `skillsAndExperienceData.ts` for skills & experience content
+   - `careerBackgroundData.ts` for career background content
 2. Add new sections by extending the existing data structures
 3. Update TypeScript types in `src/types.ts` if needed
 
@@ -157,9 +168,9 @@ src/
 
 ### Adding New Pages
 
-1. Create new page component in `src/pages/`
-2. Update router configuration in `src/App.tsx`
-3. Add navigation links in `src/components/NavLinks.tsx`
+1. Create a new page component in `src/pages/`
+2. Register the route in `src/routes/router.tsx`
+3. Add a navigation link in `src/components/NavLinks.tsx`
 
 ## 🚀 Deployment
 

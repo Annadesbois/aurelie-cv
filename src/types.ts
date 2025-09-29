@@ -1,5 +1,13 @@
-// Types for skills and experience data
+//Type for SectionRenderer component
+export type SectionRendererProps = {
+  sectionId: "skill" | "exp" | "certif";
+  subSections: SubSection[];
+  list: List[];
+  columns?: number;
+  bullets?: boolean;
+};
 
+// Types for skills and experience data
 export type SubSection = {
   subSectionId: string;
   subId: string;
@@ -11,17 +19,7 @@ export type List = {
   listContent: string;
 };
 
-export type SectionRendererProps = {
-  // TODO: could also strengthen this sectionId type to "skill" | "exp" | "certif"
-  sectionId: string;
-  subSections: SubSection[];
-  list: List[];
-  columns?: number;
-  bullets?: boolean;
-};
-
 // Types for career background data
-
 export type SelectorID =
   | "eufarms"
   | "waterProtection"

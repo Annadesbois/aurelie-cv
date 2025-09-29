@@ -129,6 +129,15 @@ src/
 - **Collapsible Sections**: Interactive component for presenting career background details
 - **Reusable UI Elements**: Shared components that enforce consistent design patterns across the app
 
+### Testing - TODO
+
+These are not yet set up, they are the next things I want to integrate.
+
+- **Set up Testing Library** – Install @testing-library/react and @testing-library/dom to render React components and query the DOM in tests.
+- **Add TypeScript support** – Use @types/react and @types/react-dom for type definitions, ensuring IntelliSense and type safety in test files.
+- **Write unit tests** – Create *.test.tsx files (e.g., in a __tests__/ folder) to verify individual components’ behavior using render, screen, and user interaction helpers.
+- **Write integration tests** – Test multiple components together (e.g., page layouts or flows) to ensure they work correctly as a whole, using realistic user interactions rather than implementation details.
+
 ## 📱 Pages Overview
 
 ### Home (Landing)

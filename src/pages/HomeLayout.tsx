@@ -1,6 +1,4 @@
-import Footer from "@/components/Footer"
-import Loading from "@/components/Loading";
-import Navbar from "@/components/Navbar";
+import { Footer, Loading, Navbar } from "../components";
 import { useEffect } from "react";
 import { Outlet, useLocation, useNavigation } from "react-router-dom";
 

@@ -200,7 +200,7 @@ npm run build
 - Implements React Router v6 with data loading patterns
 - Follows TypeScript best practices with strict typing
 - Responsive design following mobile-first principles
-- Performance optimised with code splitting and lazy loading
+- Performance optimised with code splitting
 
 ## 📄 License
 

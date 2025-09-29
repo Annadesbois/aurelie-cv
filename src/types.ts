@@ -12,6 +12,7 @@ export type List = {
 };
 
 export type SectionRendererProps = {
+  // TODO: could also strengthen this sectionId type to "skill" | "exp" | "certif"
   sectionId: string;
   subSections: SubSection[];
   list: List[];

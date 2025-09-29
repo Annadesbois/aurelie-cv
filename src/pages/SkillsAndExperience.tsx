@@ -1,4 +1,4 @@
-import SectionRenderer from "../components/SectionRenderer";
+import { SectionRenderer } from "@/components";
 import {
   certificationsList,
   certificationsSubSections,

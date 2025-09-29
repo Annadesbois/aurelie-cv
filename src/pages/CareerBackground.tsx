@@ -1,4 +1,8 @@
-import { dropdownHeadings, dateAndLocations, responsibilities } from "../data";
+import {
+  dropdownHeadings,
+  dateAndLocations,
+  responsibilities,
+} from "@/data/careerBackgroundData";
 
 const CareerBackground = () => {
   return (

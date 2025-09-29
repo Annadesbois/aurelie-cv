@@ -15,8 +15,6 @@ const toggleTheme = () => {
   localStorage.setItem("theme", newTheme);
 };
 
-// TODO - make sure the burger bar and moon/sun icon are vertically aligned
-
 const Navbar = () => {
   return (
     <nav className="bg-base-200 px-[1.5rem] md:px-[8rem] sticky top-0 z-50">

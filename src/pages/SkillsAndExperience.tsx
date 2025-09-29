@@ -6,7 +6,7 @@ import {
   experienceSubSections,
   skillList,
   skillSubSections,
-} from "../data";
+} from "@/data/skillsAndExperienceData";
 
 const SkillsAndExperience = () => {
   return (

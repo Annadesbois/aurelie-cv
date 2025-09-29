@@ -1,5 +1,5 @@
 import aurelie from "@/assets/aurelie.jpg";
-import { programmingSkillsPreview, softSkills } from "@/data";
+import { programmingSkillsPreview, softSkills } from "@/data/landingData";
 import { Link } from "react-router-dom";
 
 const Landing = () => {

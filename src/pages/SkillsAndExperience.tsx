@@ -8,6 +8,10 @@ import {
   skillSubSections,
 } from "../data";
 
+// TODO - what happens if someone lands on this page and the data doesn't load? have you got a fallback? components which rely
+// on data should have a graceful way to maintain a good UX when their data is missing. This could be a message saying "sorry, data didn't load, please refresh",
+// and the components should have conditions not to render until the data is present. eg if (!data) return <></> at the start of the component
+
 const SkillsAndExperience = () => {
   return (
     <div>

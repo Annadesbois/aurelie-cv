@@ -1,3 +1,10 @@
+export type SelectorID =
+  | "eufarms"
+  | "waterProtection"
+  | "teaching"
+  | "agroecopole"
+  | "sse";
+
 export type SubSection = {
   subSectionId: string;
   subId: string;
@@ -18,16 +25,16 @@ export type SectionRendererProps = {
 };
 
 export type Headings = {
-  headingId: string;
+  headingId: SelectorID;
   content: string;
 };
 
 export type Locations = {
-  locationId: string;
+  locationId: SelectorID;
   content: string;
 };
 
 export type Responsibilities = {
-  responsibilitiesId: string;
+  responsibilitiesId: SelectorID;
   content: string;
 };

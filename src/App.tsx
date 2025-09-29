@@ -5,6 +5,8 @@ import Error from "./pages/Error";
 import SkillsAndExperience from "./pages/SkillsAndExperience";
 import CareerBackground from "./pages/CareerBackground";
 
+// TODO - I would extract the router into its own component file, and then import the router here
+
 const router = createBrowserRouter([
   {
     path: "/",

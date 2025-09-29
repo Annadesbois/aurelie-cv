@@ -6,6 +6,8 @@ import type {
   Responsibilities,
 } from "./types";
 
+// TODO -  imagine someone visiting this file, is it easy for them to find what they want? does it need comments or separation into multiple files?
+
 export const programmingSkillsPreview: string[] = [
   "React",
   "TypeScript",
@@ -23,7 +25,7 @@ export const softSkills: string[] = [
   "Problem-solving",
   "Communication",
   "Adaptability",
-  "Organisation",
+  "Organisation", //TODO - If you are sure of a word's spelling, you can add it to the dictionary
   "Sprint-based workflows",
   "Rapid learning of new tools",
 ];
@@ -179,6 +181,8 @@ export const certificationsList: List[] = [
     listContent: "React, Next.js & TypeScript Projects",
   },
 ];
+
+// TODO: location id, heading id, responsibilities id could be an enums type. It would prevent typos and assigning something to an id which doesn't exist
 
 export const dropdownHeadings: Headings[] = [
   {

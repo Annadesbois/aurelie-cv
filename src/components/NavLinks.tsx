@@ -4,6 +4,7 @@ const links = [
   { id: 1, url: "/", text: "Home" },
   { id: 2, url: "/skillsandexperience", text: "Skills And Experience" },
   { id: 3, url: "/careerbackground", text: "Career Background" },
+  { id: 4, url: "/contact", text: "Contact" },
 ];
 
 const NavLinks = () => {

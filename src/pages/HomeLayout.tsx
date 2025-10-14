@@ -1,4 +1,4 @@
-import { Footer, Loading, Navbar } from "../components";
+import { Loading, Navbar } from "../components";
 import { useEffect } from "react";
 import { Outlet, useLocation, useNavigation } from "react-router-dom";
 
@@ -16,7 +16,6 @@ const HomeLayout = () => {
     <>
       <Navbar />
       {isPageLoading ? <Loading /> : <Outlet />}
-      <Footer />
     </>
   );
 };

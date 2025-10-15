@@ -4,10 +4,8 @@ import { afterEach, expect } from "vitest";
 import * as matchers from "@testing-library/jest-dom/matchers";
 import { vi } from "vitest";
 
-// Extend Vitest's expect with jest-dom matchers (e.g. toBeInTheDocument)
 expect.extend(matchers);
 
-// Clean up after each test to avoid leaking DOM between tests
 afterEach(() => {
   cleanup();
 });
@@ -15,3 +13,10 @@ afterEach(() => {
 vi.mock("@/assets/aurelie.jpg", () => ({
   default: "test-image.jpg",
 }));
+
+if (!("scrollTo" in window)) {
+  // @ts-expect-error augmenting jsdom window
+  window.scrollTo = vi.fn();
+} else {
+  vi.spyOn(window, "scrollTo").mockImplementation(() => {});
+}

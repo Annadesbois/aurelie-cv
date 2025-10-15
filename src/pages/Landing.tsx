@@ -46,7 +46,11 @@ const Landing = () => {
             </h1>
             <ul className="pb-6">
               {programmingSkillsPreview.map((skill) => {
-                return <li className="pb-4">{skill}</li>;
+                return (
+                  <li key={skill} className="pb-4">
+                    {skill}
+                  </li>
+                );
               })}
             </ul>
             <Link to="/skillsandexperience" className="btn btn-primary">
@@ -63,7 +67,11 @@ const Landing = () => {
             </h1>
             <ul className="pb-6">
               {softSkills.map((skill) => {
-                return <li className="pb-4">{skill}</li>;
+                return (
+                  <li key={skill} className="pb-4">
+                    {skill}
+                  </li>
+                );
               })}
             </ul>
             <Link to="/careerbackground" className="btn btn-primary">

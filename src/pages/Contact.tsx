@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Link } from "react-router-dom";
 
-const ContactPage = () => {
+const Contact = () => {
   const [state, handleSubmit] = useForm("xblzpnlw");
 
   if (state.succeeded) {
@@ -126,4 +126,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;

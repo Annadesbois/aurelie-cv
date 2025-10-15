@@ -9,7 +9,7 @@ import {
   beforeEach,
   type MockedFunction,
 } from "vitest";
-import Contact from "./Contact";
+import Contact from "@/pages/Contact";
 
 // Minimal types that match what Contact uses from Formspree
 type FormState = {

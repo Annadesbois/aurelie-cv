@@ -6,7 +6,7 @@ import {
   type RouteObject,
   type LoaderFunction,
 } from "react-router-dom";
-import Error from "./Error";
+import Error from "@/pages/Error";
 
 describe("Error page", () => {
   test("renders 404 view with a back-home link when a 404 route error occurs", async () => {

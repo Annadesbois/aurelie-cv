@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import { describe, test, expect } from "vitest";
-import SkillsAndExperience from "./SkillsAndExperience";
+import SkillsAndExperience from "@/pages/SkillsAndExperience";
 import {
   skillList,
   experienceList,
   certificationsList,
-} from "../data/skillsAndExperienceData";
+} from "../../data/skillsAndExperienceData";
 
 describe("SkillsAndExperience", () => {
   test("renders main page heading", () => {

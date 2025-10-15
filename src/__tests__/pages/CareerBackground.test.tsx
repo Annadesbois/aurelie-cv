@@ -1,8 +1,8 @@
 // src/pages/CareerBackground.test.tsx
 import { render, screen } from "@testing-library/react";
 import { describe, test, expect } from "vitest";
-import CareerBackground from "./CareerBackground";
-import { dropdownHeadings } from "../data/careerBackgroundData";
+import CareerBackground from "@/pages/CareerBackground";
+import { dropdownHeadings } from "../../data/careerBackgroundData";
 
 describe("CareerBackground", () => {
   test("renders main heading", () => {

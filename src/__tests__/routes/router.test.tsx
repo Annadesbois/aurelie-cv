@@ -7,12 +7,12 @@ import {
   type RouteObject,
 } from "react-router-dom";
 
-import HomeLayout from "../pages/HomeLayout";
-import Error from "../pages/Error";
-import Landing from "../pages/Landing";
-import SkillsAndExperience from "../pages/SkillsAndExperience";
-import CareerBackground from "../pages/CareerBackground";
-import Contact from "../pages/Contact";
+import HomeLayout from "../../pages/HomeLayout";
+import Error from "../../pages/Error";
+import Landing from "../../pages/Landing";
+import SkillsAndExperience from "../../pages/SkillsAndExperience";
+import CareerBackground from "../../pages/CareerBackground";
+import Contact from "../../pages/Contact";
 
 const routes: RouteObject[] = [
   {

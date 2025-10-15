@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { describe, test, expect, vi, beforeEach } from "vitest";
-import HomeLayout from "./HomeLayout";
+import HomeLayout from "@/pages/HomeLayout";
 
-vi.mock("../components", () => ({
+vi.mock("../../components", () => ({
   Navbar: () => <div>Mock Navbar</div>,
   Loading: () => <div>Mock Loading</div>,
 }));

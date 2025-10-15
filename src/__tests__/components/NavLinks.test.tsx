@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { describe, test, expect } from "vitest";
-import NavLinks from "./NavLinks";
+import NavLinks from "@/components/NavLinks";
 
 describe("NavLinks", () => {
   const renderWithRouter = (initialRoute: string = "/") => {

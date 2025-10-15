@@ -2,6 +2,7 @@ import "@testing-library/jest-dom";
 import { cleanup } from "@testing-library/react";
 import { afterEach, expect } from "vitest";
 import * as matchers from "@testing-library/jest-dom/matchers";
+import { vi } from "vitest";
 
 // Extend Vitest's expect with jest-dom matchers (e.g. toBeInTheDocument)
 expect.extend(matchers);
@@ -10,3 +11,7 @@ expect.extend(matchers);
 afterEach(() => {
   cleanup();
 });
+
+vi.mock("@/assets/aurelie.jpg", () => ({
+  default: "test-image.jpg",
+}));

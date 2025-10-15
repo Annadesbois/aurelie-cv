@@ -16,10 +16,7 @@ describe("Navbar", () => {
   test("renders navbar and links", () => {
     renderWithRouter(<Navbar />);
 
-    // <nav> exists
     expect(screen.getByRole("navigation")).toBeInTheDocument();
-
-    // Each label appears at least once (mobile + desktop may produce duplicates)
     const expectAtLeastOneLink = (name: RegExp) => {
       const links = screen.getAllByRole("link", { name });
       expect(links.length).toBeGreaterThan(0);

@@ -4,6 +4,7 @@ import Error from "@/pages/Error";
 import Landing from "@/pages/Landing";
 import SkillsAndExperience from "@/pages/SkillsAndExperience";
 import CareerBackground from "@/pages/CareerBackground";
+import Contact from "@/pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ export const router = createBrowserRouter([
       {
         path: "careerbackground",
         element: <CareerBackground />,
+        errorElement: <Error />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
         errorElement: <Error />,
       },
     ],

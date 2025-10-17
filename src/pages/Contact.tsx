@@ -1,8 +1,8 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Link } from "react-router-dom";
 
-const ContactPage = () => {
-  const [state, handleSubmit] = useForm("xblzpnlw");
+const Contact = () => {
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_ID);
 
   if (state.succeeded) {
     return (
@@ -126,4 +126,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;

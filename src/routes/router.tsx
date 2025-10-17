@@ -4,7 +4,7 @@ import Error from "@/pages/Error";
 import Landing from "@/pages/Landing";
 import SkillsAndExperience from "@/pages/SkillsAndExperience";
 import CareerBackground from "@/pages/CareerBackground";
-import ContactPage from "@/pages/ContactPage";
+import ContactPage from "@/pages/Contact";
 
 export const router = createBrowserRouter([
   {

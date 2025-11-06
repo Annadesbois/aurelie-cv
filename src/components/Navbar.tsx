@@ -38,7 +38,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-ghost">
+          <button>
             <label className="swap swap-rotate">
               <input type="checkbox" onChange={toggleTheme} />
               <BsSunFill className="swap-on w-4 h-4 text-primary" />

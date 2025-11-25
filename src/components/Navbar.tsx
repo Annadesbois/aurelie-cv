@@ -40,7 +40,11 @@ const Navbar = () => {
         <div className="navbar-end">
           <button>
             <label className="swap swap-rotate">
-              <input type="checkbox" onChange={toggleTheme} />
+              <input
+                type="checkbox"
+                onChange={toggleTheme}
+                aria-label="Toggle dark mode"
+              />
               <BsSunFill className="swap-on w-4 h-4 text-primary" />
               <BsMoonFill className="swap-off w-4 h-4 text-primary" />
             </label>

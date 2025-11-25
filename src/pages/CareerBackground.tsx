@@ -49,7 +49,7 @@ const CareerBackground = () => {
       </div>
       <div className="flex justify-center">
         <a
-          href="https://www.linkedin.com/in/atacquard1/?locale=en_US"
+          href="https://www.linkedin.com/in/atacquard1"
           target="_blank"
         >
           <button className="btn btn-primary mt-8 ">

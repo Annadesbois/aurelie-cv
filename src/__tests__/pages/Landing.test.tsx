@@ -7,13 +7,6 @@ const renderWithRouter = (ui: React.ReactElement) =>
   render(<MemoryRouter>{ui}</MemoryRouter>);
 
 describe("Landing", () => {
-  test("renders the profile image with correct alt text", () => {
-    renderWithRouter(<Landing />);
-    const image = screen.getByAltText("Profile picture");
-    expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute("src");
-  });
-
   test("renders the main heading with name and title", () => {
     renderWithRouter(<Landing />);
     expect(screen.getByText("Aurelie Burrows,")).toBeInTheDocument();

@@ -2,13 +2,13 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xblzpnlw");
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_ID);
 
   if (state.succeeded) {
     return (
       <div className="bg-base-100 px-[2rem] md:px-[8rem] lg:px-[10rem] py-12">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-primary mb-12">Thanks!</h2>
+          <h2 className="text-4xl font-bold text-primary mb-14">Thanks!</h2>
           <p className="text-neutral-400 mb-16">
             Your message has been sent. I’ll get back to you shortly.
           </p>
